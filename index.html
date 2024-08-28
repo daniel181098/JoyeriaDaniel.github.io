@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería Exclusiva - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('img/Logo.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInHero 1.5s forwards;
+        }
+        @keyframes fadeInHero {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .btn-light {
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-light:hover {
+            background-color: #fff;
+            color: #000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Joyería Exclusiva</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hero">
+    <div>
+        <h1>Bienvenidos a Joyería Exclusiva</h1>
+        <p>Descubre las joyas más elegantes y de alta calidad</p>
+        <a href="productos.html" class="btn btn-light btn-lg">Ver Catálogo</a>
+    </div>
+</div>
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">Nuestros Productos Destacados</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://image2.nihaojewelry.com/fit-in/800x800/filters:format(webp)/product/2022/10/26/1585072903546867712/Moda-Gato-Aleaci-n-Enchapado-Embutido-Perla-Mujeres-Pendientes-De-Gota-1-Par.jpg" class="card-img-top" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Pendientes de Gato</h5>
+                    <p class="card-text">Moda Gato Aleación Enchapado Embutido Perla Mujeres Pendientes De Gota 1 Par.</p>
+                    <a href="productos.html" class="btn btn-dark">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://image2.nihaojewelry.com/fit-in/800x800/filters:format(webp)/product/2024/6/20/1803697920718016512/Retro-Exagerado-Bohemio-Ronda-Resina-Embutido-Resina-Mujeres-Conjunto-De-Joyas.jpg" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Conjunto De Joyas</h5>
+                    <p class="card-text">Retro Exagerado Bohemio Ronda Resina Embutido Resina Mujeres Conjunto De Joyas
+                        .</p>
+                    <a href="productos.html" class="btn btn-dark">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://image2.nihaojewelry.com/fit-in/800x800/product/2024/7/26/1816818890731294720/Joyer-a-Al-Por-Mayor-Lindo-Dulce-Estrella-Nudo-De-Lazo-Cascar-n-Acero-Titanio-Perla-Chapados-en-oro-de-18k-Ahuecar-Embutido-Collar-Colgante.jpg" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                    <h5 class="card-title"> Collar Colgante de 18k</h5>
+                    <p class="card-text">Joyería Al Por Mayor Lindo Dulce Estrella Nudo De Lazo Cascarón Acero Titanio Perla Chapados en oro de 18k Ahuecar Embutido Collar Colgante
+                    </p>
+                    <a href="productos.html" class="btn btn-dark">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
